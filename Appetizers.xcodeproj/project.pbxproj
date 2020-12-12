@@ -20,6 +20,8 @@
 		76FC327C25845D6D0032B2D2 /* AppetizerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC327B25845D6D0032B2D2 /* AppetizerError.swift */; };
 		76FC327F258475900032B2D2 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC327E2584758F0032B2D2 /* AppetizerListViewModel.swift */; };
 		76FC328325847ED00032B2D2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC328225847ED00032B2D2 /* Alert.swift */; };
+		76FC328625848BA20032B2D2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC328525848BA20032B2D2 /* LoadingView.swift */; };
+		76FC328925848D0C0032B2D2 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC328825848D0C0032B2D2 /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		76FC327B25845D6D0032B2D2 /* AppetizerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerError.swift; sourceTree = "<group>"; };
 		76FC327E2584758F0032B2D2 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		76FC328225847ED00032B2D2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		76FC328525848BA20032B2D2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		76FC328825848D0C0032B2D2 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				76FC327B25845D6D0032B2D2 /* AppetizerError.swift */,
 				76FC327E2584758F0032B2D2 /* AppetizerListViewModel.swift */,
 				76FC328225847ED00032B2D2 /* Alert.swift */,
+				76FC328525848BA20032B2D2 /* LoadingView.swift */,
+				76FC328825848D0C0032B2D2 /* Color+Ext.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 				76FC32762584585B0032B2D2 /* AppetizerListCell.swift in Sources */,
 				76FC326B258347F40032B2D2 /* AccountView.swift in Sources */,
 				76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */,
+				76FC328925848D0C0032B2D2 /* Color+Ext.swift in Sources */,
 				76FC327925845B1F0032B2D2 /* NetworkManager.swift in Sources */,
+				76FC328625848BA20032B2D2 /* LoadingView.swift in Sources */,
 				76FC325525833E120032B2D2 /* AppetizersApp.swift in Sources */,
 				76FC327C25845D6D0032B2D2 /* AppetizerError.swift in Sources */,
 				76FC327F258475900032B2D2 /* AppetizerListViewModel.swift in Sources */,

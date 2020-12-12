@@ -4,11 +4,15 @@ final class AppetizerListViewModel: ObservableObject {
     
     @Published var appetizers: [Appetizer] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
     
+    // `[self]` is used to avoid repeating in the switch statements
     func getAppetizers() {
+        self.isLoading = true
         NetworkManager.shared.getAppetizers { [self] result in
             
             DispatchQueue.main.async {
+                self.isLoading = false
                 switch result {
                 case .success(let appetizers):
                     self.appetizers = appetizers
