@@ -1,10 +1,12 @@
 import Foundation
 
 final class AppetizerListViewModel: ObservableObject {
-    
+        
     @Published var appetizers: [Appetizer] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
+    @Published var isShowingDetailView = false
+    @Published var selectedAppetizer: Appetizer = MockData.sampleAppetizer
     
     // `[self]` is used to avoid repeating in the switch statements
     func getAppetizers() {
