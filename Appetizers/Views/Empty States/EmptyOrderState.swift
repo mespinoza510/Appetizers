@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct OrderEmptyState: View {
+struct EmptyOrderState: View {
     
     let imageName: String
     let message: String
@@ -30,6 +30,6 @@ struct OrderEmptyState: View {
 
 struct OrderEmptyState_Previews: PreviewProvider {
     static var previews: some View {
-        OrderEmptyState(imageName: "empty-order", message: "Test message for preview.\n Checking mutliline")
+        EmptyOrderState(imageName: "empty-order", message: "Test message for preview.\n Checking mutliline")
     }
 }
