@@ -38,7 +38,7 @@ struct AppetizerDetailView: View {
             Button {
                 print("Order Added to cart")
             } label: {
-                OrderButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to order")
+                OrderButtonLabel(title: "$\(appetizer.price, specifier: "%.2f") - Add to order")
             }
             .padding(.bottom, 30)
         }

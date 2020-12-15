@@ -29,6 +29,7 @@
 		76FC32AB25887D4B0032B2D2 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32AA25887D470032B2D2 /* AccountViewModel.swift */; };
 		76FC32AE258881310032B2D2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32AD258881310032B2D2 /* String+Ext.swift */; };
 		76FC32B125888D990032B2D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32B025888D990032B2D2 /* User.swift */; };
+		76FC32B525894EEB0032B2D2 /* OrderEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32B425894EE30032B2D2 /* OrderEmptyState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		76FC32AA25887D470032B2D2 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		76FC32AD258881310032B2D2 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		76FC32B025888D990032B2D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		76FC32B425894EE30032B2D2 /* OrderEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEmptyState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		76FC3298258581CF0032B2D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				76FC32B325894EB00032B2D2 /* Empty States */,
 				76FC32A72585F4620032B2D2 /* Buttons */,
 				76FC329A258582040032B2D2 /* Cells */,
 				76FC329B258582230032B2D2 /* Image */,
@@ -241,6 +244,14 @@
 				76FC329D2585C3620032B2D2 /* AppetizerDetailView.swift */,
 			);
 			path = DetailViews;
+			sourceTree = "<group>";
+		};
+		76FC32B325894EB00032B2D2 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				76FC32B425894EE30032B2D2 /* OrderEmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FC32B525894EEB0032B2D2 /* OrderEmptyState.swift in Sources */,
 				76FC3273258359040032B2D2 /* Appetizer.swift in Sources */,
 				76FC32762584585B0032B2D2 /* AppetizerListCell.swift in Sources */,
 				76FC32A42585DABD0032B2D2 /* XDismissButton.swift in Sources */,

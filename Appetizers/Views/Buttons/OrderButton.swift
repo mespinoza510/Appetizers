@@ -8,14 +8,22 @@ struct OrderButton: View {
         Button {
             print("tapped")
         } label: {
-            Text(title)
-                .font(.title3)
-                .fontWeight(.semibold)
-                .foregroundColor(.white)
-                .frame(width: 260, height: 50)
-                .background(Color.brandPrimary)
-                .cornerRadius(10)
+            OrderButtonLabel(title: title)
         }
+    }
+}
+
+struct OrderButtonLabel: View {
+    var title: LocalizedStringKey
+    
+    var body: some View {
+        Text(title)
+            .font(.title3)
+            .fontWeight(.semibold)
+            .foregroundColor(.white)
+            .frame(width: 260, height: 50)
+            .background(Color.brandPrimary)
+            .cornerRadius(10)
     }
 }
 
