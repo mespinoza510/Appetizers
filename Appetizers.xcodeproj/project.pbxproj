@@ -26,6 +26,9 @@
 		76FC329E2585C3620032B2D2 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC329D2585C3620032B2D2 /* AppetizerDetailView.swift */; };
 		76FC32A12585D3B50032B2D2 /* OrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32A02585D3B40032B2D2 /* OrderButton.swift */; };
 		76FC32A42585DABD0032B2D2 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32A32585DABD0032B2D2 /* XDismissButton.swift */; };
+		76FC32AB25887D4B0032B2D2 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32AA25887D470032B2D2 /* AccountViewModel.swift */; };
+		76FC32AE258881310032B2D2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32AD258881310032B2D2 /* String+Ext.swift */; };
+		76FC32B125888D990032B2D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC32B025888D990032B2D2 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		76FC329D2585C3620032B2D2 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		76FC32A02585D3B40032B2D2 /* OrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderButton.swift; sourceTree = "<group>"; };
 		76FC32A32585DABD0032B2D2 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		76FC32AA25887D470032B2D2 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		76FC32AD258881310032B2D2 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		76FC32B025888D990032B2D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				76FC326A258347F40032B2D2 /* AccountView.swift */,
+				76FC32AA25887D470032B2D2 /* AccountViewModel.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				76FC328825848D0C0032B2D2 /* Color+Ext.swift */,
+				76FC32AD258881310032B2D2 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -178,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				76FC3272258359040032B2D2 /* Appetizer.swift */,
+				76FC32B025888D990032B2D2 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,14 +316,17 @@
 				76FC32762584585B0032B2D2 /* AppetizerListCell.swift in Sources */,
 				76FC32A42585DABD0032B2D2 /* XDismissButton.swift in Sources */,
 				76FC326B258347F40032B2D2 /* AccountView.swift in Sources */,
+				76FC32AB25887D4B0032B2D2 /* AccountViewModel.swift in Sources */,
 				76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */,
 				76FC32A12585D3B50032B2D2 /* OrderButton.swift in Sources */,
 				76FC328925848D0C0032B2D2 /* Color+Ext.swift in Sources */,
+				76FC32B125888D990032B2D2 /* User.swift in Sources */,
 				76FC327925845B1F0032B2D2 /* NetworkManager.swift in Sources */,
 				76FC328625848BA20032B2D2 /* LoadingView.swift in Sources */,
 				76FC325525833E120032B2D2 /* AppetizersApp.swift in Sources */,
 				76FC327C25845D6D0032B2D2 /* AppetizerError.swift in Sources */,
 				76FC328C25854DF80032B2D2 /* RemoteImage.swift in Sources */,
+				76FC32AE258881310032B2D2 /* String+Ext.swift in Sources */,
 				76FC329E2585C3620032B2D2 /* AppetizerDetailView.swift in Sources */,
 				76FC327F258475900032B2D2 /* AppetizerListViewModel.swift in Sources */,
 				76FC328325847ED00032B2D2 /* Alert.swift in Sources */,
