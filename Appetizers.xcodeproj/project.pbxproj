@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7691E16D2589D47F0083B307 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E16C2589D47F0083B307 /* Date+Ext.swift */; };
 		76FC325525833E120032B2D2 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC325425833E120032B2D2 /* AppetizersApp.swift */; };
 		76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC325625833E120032B2D2 /* AppetizerTabView.swift */; };
 		76FC325925833E160032B2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FC325825833E160032B2D2 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7691E16C2589D47F0083B307 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		76FC325125833E120032B2D2 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FC325425833E120032B2D2 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		76FC325625833E120032B2D2 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				76FC328825848D0C0032B2D2 /* Color+Ext.swift */,
 				76FC32AD258881310032B2D2 /* String+Ext.swift */,
+				7691E16C2589D47F0083B307 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				76FC3273258359040032B2D2 /* Appetizer.swift in Sources */,
 				76FC32762584585B0032B2D2 /* AppetizerListCell.swift in Sources */,
 				76FC32A42585DABD0032B2D2 /* XDismissButton.swift in Sources */,
+				7691E16D2589D47F0083B307 /* Date+Ext.swift in Sources */,
 				76FC32BA258954B10032B2D2 /* Order.swift in Sources */,
 				76FC326B258347F40032B2D2 /* AccountView.swift in Sources */,
 				76FC32AB25887D4B0032B2D2 /* AccountViewModel.swift in Sources */,

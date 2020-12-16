@@ -31,8 +31,8 @@ struct AppetizerDetailView: View {
             HStack(spacing: 40) {
                 
                 NutritionInfo(title: "Calories", value: appetizer.calories, units: "")
-                NutritionInfo(title: "Carbs", value: appetizer.carbs, units: "g")
-                NutritionInfo(title: "Protein", value: appetizer.protein, units: "g")
+                NutritionInfo(title: "Carbs", value: appetizer.carbs, units: " g")
+                NutritionInfo(title: "Protein", value: appetizer.protein, units: " g")
             }
             
             Spacer()
