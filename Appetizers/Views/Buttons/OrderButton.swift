@@ -20,7 +20,7 @@ struct OrderButtonLabel: View {
         Text(title)
             .font(.title3)
             .fontWeight(.semibold)
-            .foregroundColor(.white)
+            .foregroundColor(Color.brandSecondary)
             .frame(width: 260, height: 50)
             .background(Color.brandPrimary)
             .cornerRadius(10)
