@@ -9,21 +9,45 @@ struct AccountView: View {
             Form {
                 Section(header: Text("Personal Info")) {
                     
-                    TextField("First Name", text: $viewModel.user.firstName)
-                        .autocapitalization(.words)
+                    HStack {
+                        Image(systemName: SFSymbols.person.rawValue)
+                            .foregroundColor(.gray)
+                        
+                        AppetizerTextField(placeHolder: "First Name",
+                                           text: $viewModel.user.firstName,
+                                           refresh: $viewModel.refresh)
+                    }
+            
+                    HStack {
+                        Image(systemName: SFSymbols.person.rawValue)
+                            .foregroundColor(.gray)
+                        
+                        AppetizerTextField(placeHolder: "Last Name",
+                                           text: $viewModel.user.lastName,
+                                           refresh: $viewModel.refresh)
+                    }
                     
-                    TextField("Last Name", text: $viewModel.user.lastName)
-                        .autocapitalization(.words)
+                    HStack {
+                        Image(systemName: SFSymbols.envelope.rawValue)
+                            .foregroundColor(.gray)
+                        
+                        AppetizerTextField(placeHolder: "Email",
+                                           text: $viewModel.user.email,
+                                           refresh: $viewModel.refresh)
+                            .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
+                            .disableAutocorrection(true)
+                    }
                     
-                    TextField("Email", text: $viewModel.user.email)
-                        .keyboardType(.emailAddress)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                    
-                    DatePicker("Birthday",
-                               selection: $viewModel.user.birthDate,
-                               in: Date().oneHundredYearsAgo...Date().eighteenYearsAgo,
-                               displayedComponents: .date)
+                    HStack {
+                        Image(systemName: "calendar")
+                            .foregroundColor(.secondary)
+                        
+                        DatePicker("Birthday",
+                                   selection: $viewModel.user.birthDate,
+                                   in: Date().oneHundredYearsAgo...Date().eighteenYearsAgo,
+                                   displayedComponents: .date)
+                    }
                     
                     Button {
                         viewModel.saveChanges()
@@ -33,14 +57,14 @@ struct AccountView: View {
                     }
                 }
                 
-                Section(header: Text("Requests")) {
+                Section(header: Text("Requests ")) {
                     Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
                     Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefill)
                 }
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
             }
             .navigationTitle("👤 Account")
-        }
+        }.animation(.none)
         .onAppear {
             self.viewModel.retrieveUser()
         }
@@ -55,5 +79,6 @@ struct AccountView: View {
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
         AccountView()
+            .preferredColorScheme(.dark)
     }
 }

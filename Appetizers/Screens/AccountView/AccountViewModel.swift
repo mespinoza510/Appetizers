@@ -5,6 +5,7 @@ final class AccountViewModel: ObservableObject {
     @AppStorage("user") var userData: Data?
     @Published var user = User()
     @Published var alertItem: AlertItem?
+    @Published var refresh = false
     
     var isValidForm: Bool {
         guard !user.firstName.isEmpty && !user.lastName.isEmpty && !user.email.isEmpty else {

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768503C0258C853900D71A5A /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768503BF258C853800D71A5A /* SFSymbols.swift */; };
 		7691E16D2589D47F0083B307 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E16C2589D47F0083B307 /* Date+Ext.swift */; };
+		7691E1742589EEBA0083B307 /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E1732589EEBA0083B307 /* ClearButton.swift */; };
+		7691E1792589F1010083B307 /* AppetizerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E1782589F1010083B307 /* AppetizerTextField.swift */; };
 		76FC325525833E120032B2D2 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC325425833E120032B2D2 /* AppetizersApp.swift */; };
 		76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC325625833E120032B2D2 /* AppetizerTabView.swift */; };
 		76FC325925833E160032B2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FC325825833E160032B2D2 /* Assets.xcassets */; };
@@ -35,7 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		768503BF258C853800D71A5A /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
 		7691E16C2589D47F0083B307 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		7691E1732589EEBA0083B307 /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
+		7691E1782589F1010083B307 /* AppetizerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTextField.swift; sourceTree = "<group>"; };
 		76FC325125833E120032B2D2 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FC325425833E120032B2D2 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		76FC325625833E120032B2D2 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7691E1772589F0C60083B307 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				7691E1782589F1010083B307 /* AppetizerTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
 		76FC324825833E110032B2D2 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +172,7 @@
 				76FC32952585810E0032B2D2 /* Managers */,
 				76FC3294258580FE0032B2D2 /* Extensions */,
 				76FC3293258580E80032B2D2 /* Alerts */,
+				768503BF258C853800D71A5A /* SFSymbols.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -202,10 +217,11 @@
 		76FC3298258581CF0032B2D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				76FC32B325894EB00032B2D2 /* Empty States */,
 				76FC32A72585F4620032B2D2 /* Buttons */,
 				76FC329A258582040032B2D2 /* Cells */,
+				76FC32B325894EB00032B2D2 /* Empty States */,
 				76FC329B258582230032B2D2 /* Image */,
+				7691E1772589F0C60083B307 /* TextFields */,
 				76FC3299258581E30032B2D2 /* UIKit Components */,
 			);
 			path = Views;
@@ -238,6 +254,7 @@
 		76FC32A72585F4620032B2D2 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				7691E1732589EEBA0083B307 /* ClearButton.swift */,
 				76FC32A02585D3B40032B2D2 /* OrderButton.swift */,
 				76FC32A32585DABD0032B2D2 /* XDismissButton.swift */,
 			);
@@ -336,6 +353,7 @@
 				7691E16D2589D47F0083B307 /* Date+Ext.swift in Sources */,
 				76FC32BA258954B10032B2D2 /* Order.swift in Sources */,
 				76FC326B258347F40032B2D2 /* AccountView.swift in Sources */,
+				7691E1742589EEBA0083B307 /* ClearButton.swift in Sources */,
 				76FC32AB25887D4B0032B2D2 /* AccountViewModel.swift in Sources */,
 				76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */,
 				76FC32A12585D3B50032B2D2 /* OrderButton.swift in Sources */,
@@ -347,11 +365,13 @@
 				76FC327C25845D6D0032B2D2 /* AppetizerError.swift in Sources */,
 				76FC328C25854DF80032B2D2 /* RemoteImage.swift in Sources */,
 				76FC32AE258881310032B2D2 /* String+Ext.swift in Sources */,
+				768503C0258C853900D71A5A /* SFSymbols.swift in Sources */,
 				76FC329E2585C3620032B2D2 /* AppetizerDetailView.swift in Sources */,
 				76FC327F258475900032B2D2 /* AppetizerListViewModel.swift in Sources */,
 				76FC328325847ED00032B2D2 /* Alert.swift in Sources */,
 				76FC3268258347D70032B2D2 /* AppetizerListView.swift in Sources */,
 				76FC326E258348510032B2D2 /* OrderView.swift in Sources */,
+				7691E1792589F1010083B307 /* AppetizerTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
