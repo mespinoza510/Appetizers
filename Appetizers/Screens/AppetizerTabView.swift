@@ -1,23 +1,26 @@
 import SwiftUI
+import Foundation
 
 struct AppetizerTabView: View {
+    
     var body: some View {
+        
         TabView {
             AppetizerListView()
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: SFSymbols.house.rawValue)
                     Text("Home")
                 }
             
             AccountView()
                 .tabItem {
-                    Image(systemName: "person")
+                    Image(systemName: SFSymbols.person.rawValue)
                     Text("Account")
                 }
             
             OrderView()
                 .tabItem {
-                    Image(systemName: "bag")
+                    Image(systemName: SFSymbols.bag.rawValue)
                     Text("Order")
                 }
         }

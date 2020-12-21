@@ -7,6 +7,7 @@ enum SFSymbols: String {
     case calendar
     case house
     case bag
+    case cart
 }
 
 

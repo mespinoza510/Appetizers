@@ -7,6 +7,7 @@ final class AppetizerListViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var isShowingDetailView = false
     @Published var selectedAppetizer: Appetizer = MockData.sampleAppetizer
+    @Published var orderView = OrderView()
     
     // `[self]` is used to avoid repeating in the switch statements
     func getAppetizers() {

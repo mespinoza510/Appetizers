@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		768503C0258C853900D71A5A /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768503BF258C853800D71A5A /* SFSymbols.swift */; };
+		768503C4258DE59500D71A5A /* ViewOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768503C3258DE59500D71A5A /* ViewOrderButton.swift */; };
 		7691E16D2589D47F0083B307 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E16C2589D47F0083B307 /* Date+Ext.swift */; };
 		7691E1742589EEBA0083B307 /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E1732589EEBA0083B307 /* ClearButton.swift */; };
 		7691E1792589F1010083B307 /* AppetizerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E1782589F1010083B307 /* AppetizerTextField.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		768503BF258C853800D71A5A /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		768503C3258DE59500D71A5A /* ViewOrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrderButton.swift; sourceTree = "<group>"; };
 		7691E16C2589D47F0083B307 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		7691E1732589EEBA0083B307 /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
 		7691E1782589F1010083B307 /* AppetizerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTextField.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				7691E1732589EEBA0083B307 /* ClearButton.swift */,
 				76FC32A02585D3B40032B2D2 /* OrderButton.swift */,
 				76FC32A32585DABD0032B2D2 /* XDismissButton.swift */,
+				768503C3258DE59500D71A5A /* ViewOrderButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				76FC328925848D0C0032B2D2 /* Color+Ext.swift in Sources */,
 				76FC32B125888D990032B2D2 /* User.swift in Sources */,
 				76FC327925845B1F0032B2D2 /* NetworkManager.swift in Sources */,
+				768503C4258DE59500D71A5A /* ViewOrderButton.swift in Sources */,
 				76FC328625848BA20032B2D2 /* LoadingView.swift in Sources */,
 				76FC325525833E120032B2D2 /* AppetizersApp.swift in Sources */,
 				76FC327C25845D6D0032B2D2 /* AppetizerError.swift in Sources */,
