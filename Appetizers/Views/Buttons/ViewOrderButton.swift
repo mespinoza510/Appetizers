@@ -67,6 +67,6 @@ struct OrderNumber: View {
 
 struct ViewOrderButton_Previews: PreviewProvider {
     static var previews: some View {
-        ViewOrderButton(itemNum: 1, isViewOrderButtonTapped: .constant(false))
+        ViewOrderButton(itemNum: 1)
     }
 }
