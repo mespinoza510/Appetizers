@@ -3,7 +3,7 @@ import SwiftUI
 struct AppetizerListView: View {
     
     @EnvironmentObject var order: Order
-    @StateObject private var viewModel = AppetizerListViewModel()
+    @StateObject var viewModel = AppetizerListViewModel()
     
     var body: some View {
         ZStack {
@@ -14,7 +14,12 @@ struct AppetizerListView: View {
                             self.viewModel.selectedAppetizer = appetizer
                             self.viewModel.isShowingDetailView = true
                         }
-                }.overlay(ViewOrderButton(itemNum: order.items.count), alignment: .bottom)
+                }.overlay(
+                    NavigationLink(destination: viewModel.orderView,
+                                   isActive: $viewModel.isViewOrderButtonTapped) {
+                        ViewOrderButton(isViewOrderButtonTapped: $viewModel.isViewOrderButtonTapped,
+                                        itemNum: order.items.count)
+                    }, alignment: .bottom)
                 .navigationTitle("🍘 Appetizers")
                 .disabled(viewModel.isShowingDetailView)
             }

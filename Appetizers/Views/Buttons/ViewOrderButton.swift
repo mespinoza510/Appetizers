@@ -2,12 +2,13 @@ import SwiftUI
 
 struct ViewOrderButton: View {
     
+    @Binding var isViewOrderButtonTapped: Bool
     let itemNum: Int
     
     var body: some View {
         
         Button {
-            
+            self.isViewOrderButtonTapped = true
         } label: {
             if itemNum > 0 {
                 ZStack {
@@ -48,7 +49,7 @@ struct ViewOrderButton: View {
                 .background(Color.brandPrimary)
                 .cornerRadius(30)
             }
-        }
+        }.animation(.easeIn)
         
     }
 }
@@ -67,6 +68,6 @@ struct OrderNumber: View {
 
 struct ViewOrderButton_Previews: PreviewProvider {
     static var previews: some View {
-        ViewOrderButton(itemNum: 1)
+        ViewOrderButton(isViewOrderButtonTapped: .constant(false), itemNum: 1)
     }
 }
