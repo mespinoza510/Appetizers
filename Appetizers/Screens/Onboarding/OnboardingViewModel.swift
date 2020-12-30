@@ -1,6 +1,8 @@
 import SwiftUI
 
 final class OnboardingViewModel: ObservableObject {
+    
+    @AppStorage("hasShownWelcomeScreen") var hasShownWelcomeScreen: Bool = false
     @Published var maxWidth = UIScreen.main.bounds.size.width - 100
     @Published var sliderOffset: CGFloat = 0
     @Published var animateText = false

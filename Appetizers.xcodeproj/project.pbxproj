@@ -15,6 +15,7 @@
 		7691E1792589F1010083B307 /* AppetizerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E1782589F1010083B307 /* AppetizerTextField.swift */; };
 		76AC8973259B1A1200C12D72 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8972259B1A1200C12D72 /* OnboardingViewModel.swift */; };
 		76AC8977259BFDEC00C12D72 /* ShimmerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8976259BFDEC00C12D72 /* ShimmerText.swift */; };
+		76AC897A259C5EDC00C12D72 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8979259C5EDC00C12D72 /* UserDefaults+Ext.swift */; };
 		76FC325525833E120032B2D2 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC325425833E120032B2D2 /* AppetizersApp.swift */; };
 		76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC325625833E120032B2D2 /* AppetizerTabView.swift */; };
 		76FC325925833E160032B2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FC325825833E160032B2D2 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		7691E1782589F1010083B307 /* AppetizerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTextField.swift; sourceTree = "<group>"; };
 		76AC8972259B1A1200C12D72 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		76AC8976259BFDEC00C12D72 /* ShimmerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerText.swift; sourceTree = "<group>"; };
+		76AC8979259C5EDC00C12D72 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		76FC325125833E120032B2D2 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FC325425833E120032B2D2 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		76FC325625833E120032B2D2 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				76FC328825848D0C0032B2D2 /* Color+Ext.swift */,
 				76FC32AD258881310032B2D2 /* String+Ext.swift */,
 				7691E16C2589D47F0083B307 /* Date+Ext.swift */,
+				76AC8979259C5EDC00C12D72 /* UserDefaults+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				76FC32AB25887D4B0032B2D2 /* AccountViewModel.swift in Sources */,
 				76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */,
 				76FC32A12585D3B50032B2D2 /* OrderButton.swift in Sources */,
+				76AC897A259C5EDC00C12D72 /* UserDefaults+Ext.swift in Sources */,
 				76FC328925848D0C0032B2D2 /* Color+Ext.swift in Sources */,
 				76FC32B125888D990032B2D2 /* User.swift in Sources */,
 				768503C8259718CA00D71A5A /* OnboardingView.swift in Sources */,

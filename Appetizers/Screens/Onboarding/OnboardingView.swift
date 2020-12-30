@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct DisplayOnboardingView: View {
-    @State var goToAppetizerListView = false
+    @State var hasCompletedSwipe = false
     
     var body: some View {
         ZStack {
-            if goToAppetizerListView {
+            if hasCompletedSwipe || UserDefaults.standard.welcomeScreenShown {
                 AppetizerListView()
             } else {
                 OnboardingView()
             }
         }.onReceive(NotificationCenter.default.publisher(for: Notification.Name("Success")), perform: { _ in
-            withAnimation { self.goToAppetizerListView = true }
+            withAnimation { self.hasCompletedSwipe = true }
         })
     }
 }
@@ -75,6 +75,9 @@ struct OnboardingView: View {
                 .padding(.bottom)
             }
         }
+        .onAppear(perform:  {
+            UserDefaults.standard.welcomeScreenShown = true
+        })
     }
 }
 
