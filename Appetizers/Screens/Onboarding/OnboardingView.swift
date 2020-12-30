@@ -43,10 +43,7 @@ struct OnboardingView: View {
                     Capsule()
                         .fill(Color.primary.opacity(0.15))
                     
-                    Text("SWIPE TO START")
-                        .fontWeight(.semibold)
-                        .foregroundColor(.gray)
-                        .padding(.leading, 30)
+                    ShimmerText(text: "SWIPE TO START", fontColor: .gray, animate: $viewModel.animateText)
                     
                     HStack {
                         Capsule()
@@ -84,5 +81,6 @@ struct OnboardingView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
+            .preferredColorScheme(.light)
     }
 }
