@@ -7,7 +7,7 @@ struct AppetizersApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AppetizerTabView()
+            DisplayOnboardingView()
                 .environmentObject(order)
         }
     }
