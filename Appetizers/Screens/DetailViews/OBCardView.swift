@@ -12,6 +12,7 @@ struct OBCardView: View {
             Text(card.title)
                 .font(.title)
                 .fontWeight(.medium)
+                .foregroundColor(.primary)
             
             Image(card.image)
                 .resizable()
@@ -23,7 +24,6 @@ struct OBCardView: View {
                 .padding(.bottom)
         }
         .frame(width: width, height: height)
-        .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color.white))
         .animation(.default)
     }
 }
