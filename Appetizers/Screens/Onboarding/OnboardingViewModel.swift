@@ -6,6 +6,7 @@ final class OnboardingViewModel: ObservableObject {
     @Published var maxWidth = UIScreen.main.bounds.size.width - 100
     @Published var sliderOffset: CGFloat = 0
     @Published var animateText = false
+    @Published var page: Int = 0
     
     let sliderRadius: CGFloat = 65
     

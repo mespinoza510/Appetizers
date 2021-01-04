@@ -16,6 +16,12 @@
 		76AC8973259B1A1200C12D72 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8972259B1A1200C12D72 /* OnboardingViewModel.swift */; };
 		76AC8977259BFDEC00C12D72 /* ShimmerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8976259BFDEC00C12D72 /* ShimmerText.swift */; };
 		76AC897A259C5EDC00C12D72 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8979259C5EDC00C12D72 /* UserDefaults+Ext.swift */; };
+		76AC8981259D86E800C12D72 /* OnboardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8980259D86E800C12D72 /* OnboardSet.swift */; };
+		76AC8984259D87A000C12D72 /* OnboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8983259D87A000C12D72 /* OnboardCard.swift */; };
+		76AC8988259D90DD00C12D72 /* OBCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8987259D90DD00C12D72 /* OBCardView.swift */; };
+		76AC898D25A1AAC900C12D72 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC898C25A1AAC800C12D72 /* CarouselView.swift */; };
+		76AC899125A1B2C900C12D72 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC899025A1B2C900C12D72 /* CardList.swift */; };
+		76AC899425A27D0D00C12D72 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC899325A27D0B00C12D72 /* PageControl.swift */; };
 		76FC325525833E120032B2D2 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC325425833E120032B2D2 /* AppetizersApp.swift */; };
 		76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC325625833E120032B2D2 /* AppetizerTabView.swift */; };
 		76FC325925833E160032B2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FC325825833E160032B2D2 /* Assets.xcassets */; };
@@ -52,6 +58,12 @@
 		76AC8972259B1A1200C12D72 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		76AC8976259BFDEC00C12D72 /* ShimmerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerText.swift; sourceTree = "<group>"; };
 		76AC8979259C5EDC00C12D72 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
+		76AC8980259D86E800C12D72 /* OnboardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardSet.swift; sourceTree = "<group>"; };
+		76AC8983259D87A000C12D72 /* OnboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCard.swift; sourceTree = "<group>"; };
+		76AC8987259D90DD00C12D72 /* OBCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBCardView.swift; sourceTree = "<group>"; };
+		76AC898C25A1AAC800C12D72 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		76AC899025A1B2C900C12D72 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		76AC899325A27D0B00C12D72 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		76FC325125833E120032B2D2 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FC325425833E120032B2D2 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		76FC325625833E120032B2D2 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -96,6 +108,7 @@
 			children = (
 				768503C7259718BA00D71A5A /* OnboardingView.swift */,
 				76AC8972259B1A1200C12D72 /* OnboardingViewModel.swift */,
+				76AC8980259D86E800C12D72 /* OnboardSet.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -114,6 +127,14 @@
 				76AC8976259BFDEC00C12D72 /* ShimmerText.swift */,
 			);
 			path = AnimatedText;
+			sourceTree = "<group>";
+		};
+		76AC898F25A1B2A300C12D72 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				76AC899025A1B2C900C12D72 /* CardList.swift */,
+			);
+			path = Lists;
 			sourceTree = "<group>";
 		};
 		76FC324825833E110032B2D2 = {
@@ -239,6 +260,7 @@
 				76FC3272258359040032B2D2 /* Appetizer.swift */,
 				76FC32B025888D990032B2D2 /* User.swift */,
 				76FC32B9258954B10032B2D2 /* Order.swift */,
+				76AC8983259D87A000C12D72 /* OnboardCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +273,7 @@
 				76FC329A258582040032B2D2 /* Cells */,
 				76FC32B325894EB00032B2D2 /* Empty States */,
 				76FC329B258582230032B2D2 /* Image */,
+				76AC898F25A1B2A300C12D72 /* Lists */,
 				7691E1772589F0C60083B307 /* TextFields */,
 				76FC3299258581E30032B2D2 /* UIKit Components */,
 			);
@@ -261,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				76FC328525848BA20032B2D2 /* LoadingView.swift */,
+				76AC898C25A1AAC800C12D72 /* CarouselView.swift */,
+				76AC899325A27D0B00C12D72 /* PageControl.swift */,
 			);
 			path = "UIKit Components";
 			sourceTree = "<group>";
@@ -296,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				76FC329D2585C3620032B2D2 /* AppetizerDetailView.swift */,
+				76AC8987259D90DD00C12D72 /* OBCardView.swift */,
 			);
 			path = DetailViews;
 			sourceTree = "<group>";
@@ -381,6 +407,7 @@
 				76FC3273258359040032B2D2 /* Appetizer.swift in Sources */,
 				76FC32762584585B0032B2D2 /* AppetizerListCell.swift in Sources */,
 				76FC32A42585DABD0032B2D2 /* XDismissButton.swift in Sources */,
+				76AC899125A1B2C900C12D72 /* CardList.swift in Sources */,
 				7691E16D2589D47F0083B307 /* Date+Ext.swift in Sources */,
 				76FC32BA258954B10032B2D2 /* Order.swift in Sources */,
 				76FC326B258347F40032B2D2 /* AccountView.swift in Sources */,
@@ -393,9 +420,13 @@
 				76FC32B125888D990032B2D2 /* User.swift in Sources */,
 				768503C8259718CA00D71A5A /* OnboardingView.swift in Sources */,
 				76AC8977259BFDEC00C12D72 /* ShimmerText.swift in Sources */,
+				76AC899425A27D0D00C12D72 /* PageControl.swift in Sources */,
+				76AC8984259D87A000C12D72 /* OnboardCard.swift in Sources */,
+				76AC8988259D90DD00C12D72 /* OBCardView.swift in Sources */,
 				76FC327925845B1F0032B2D2 /* NetworkManager.swift in Sources */,
 				768503C4258DE59500D71A5A /* ViewOrderButton.swift in Sources */,
 				76AC8973259B1A1200C12D72 /* OnboardingViewModel.swift in Sources */,
+				76AC898D25A1AAC900C12D72 /* CarouselView.swift in Sources */,
 				76FC328625848BA20032B2D2 /* LoadingView.swift in Sources */,
 				76FC325525833E120032B2D2 /* AppetizersApp.swift in Sources */,
 				76FC327C25845D6D0032B2D2 /* AppetizerError.swift in Sources */,
@@ -408,6 +439,7 @@
 				76FC3268258347D70032B2D2 /* AppetizerListView.swift in Sources */,
 				76FC326E258348510032B2D2 /* OrderView.swift in Sources */,
 				7691E1792589F1010083B307 /* AppetizerTextField.swift in Sources */,
+				76AC8981259D86E800C12D72 /* OnboardSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

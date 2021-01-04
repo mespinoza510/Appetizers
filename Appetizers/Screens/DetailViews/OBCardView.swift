@@ -2,27 +2,29 @@ import SwiftUI
 
 struct OBCardView: View {
     
-    let appetizer: Appetizer
+    @Binding var page: Int
+    let card: OnboardCard
     let width: CGFloat
     let height: CGFloat
     
     var body: some View {
         VStack {
-            Text("Blackened Shrimp")
-                .font(.largeTitle)
+            Text(card.title)
+                .font(.title)
+                .fontWeight(.medium)
             
-            Image("blackened-shrimp")
+            Image(card.image)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
             
-            Text("One of the restaurants favorites!")
+            Text(card.text)
                 .fontWeight(.medium)
                 .multilineTextAlignment(.center)
                 .padding(.bottom)
         }
         .frame(width: width, height: height)
-        .background(RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(Color(.secondarySystemBackground)))
+        .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color.white))
+        .animation(.default)
     }
 }
 
@@ -30,7 +32,7 @@ struct AppetizerCardView_Previews: PreviewProvider {
     
     static let onboardSet = OnboardSet.previewSet()
     static var previews: some View {
-        OBCardView(appetizer: MockData.sampleAppetizer, width: 350, height: 350)
+        OBCardView(page: .constant(3), card: onboardSet.cards[0], width: 350, height: 350)
             .previewLayout(.sizeThatFits)
     }
 }

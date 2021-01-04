@@ -35,6 +35,12 @@ struct OnboardingView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
                     .padding(.top)
+                
+                GeometryReader { geo in
+                    CarouselView(page: self.$viewModel.page, width: UIScreen.main.bounds.width, height: geo.frame(in: .global).height)
+                }
+                PageControl(page: self.$viewModel.page)
+                    .padding(.vertical)
                     
                 
                 Spacer()
