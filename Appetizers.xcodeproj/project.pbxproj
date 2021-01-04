@@ -15,7 +15,6 @@
 		7691E1792589F1010083B307 /* AppetizerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E1782589F1010083B307 /* AppetizerTextField.swift */; };
 		76AC8973259B1A1200C12D72 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8972259B1A1200C12D72 /* OnboardingViewModel.swift */; };
 		76AC8977259BFDEC00C12D72 /* ShimmerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8976259BFDEC00C12D72 /* ShimmerText.swift */; };
-		76AC897A259C5EDC00C12D72 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8979259C5EDC00C12D72 /* UserDefaults+Ext.swift */; };
 		76AC8981259D86E800C12D72 /* OnboardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8980259D86E800C12D72 /* OnboardSet.swift */; };
 		76AC8984259D87A000C12D72 /* OnboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8983259D87A000C12D72 /* OnboardCard.swift */; };
 		76AC8988259D90DD00C12D72 /* OBCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC8987259D90DD00C12D72 /* OBCardView.swift */; };
@@ -57,7 +56,6 @@
 		7691E1782589F1010083B307 /* AppetizerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTextField.swift; sourceTree = "<group>"; };
 		76AC8972259B1A1200C12D72 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		76AC8976259BFDEC00C12D72 /* ShimmerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerText.swift; sourceTree = "<group>"; };
-		76AC8979259C5EDC00C12D72 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		76AC8980259D86E800C12D72 /* OnboardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardSet.swift; sourceTree = "<group>"; };
 		76AC8983259D87A000C12D72 /* OnboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCard.swift; sourceTree = "<group>"; };
 		76AC8987259D90DD00C12D72 /* OBCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBCardView.swift; sourceTree = "<group>"; };
@@ -241,7 +239,6 @@
 				76FC328825848D0C0032B2D2 /* Color+Ext.swift */,
 				76FC32AD258881310032B2D2 /* String+Ext.swift */,
 				7691E16C2589D47F0083B307 /* Date+Ext.swift */,
-				76AC8979259C5EDC00C12D72 /* UserDefaults+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -415,7 +412,6 @@
 				76FC32AB25887D4B0032B2D2 /* AccountViewModel.swift in Sources */,
 				76FC325725833E120032B2D2 /* AppetizerTabView.swift in Sources */,
 				76FC32A12585D3B50032B2D2 /* OrderButton.swift in Sources */,
-				76AC897A259C5EDC00C12D72 /* UserDefaults+Ext.swift in Sources */,
 				76FC328925848D0C0032B2D2 /* Color+Ext.swift in Sources */,
 				76FC32B125888D990032B2D2 /* User.swift in Sources */,
 				768503C8259718CA00D71A5A /* OnboardingView.swift in Sources */,

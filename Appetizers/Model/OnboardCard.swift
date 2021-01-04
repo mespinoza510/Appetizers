@@ -14,7 +14,7 @@ struct CardContext {
     
     static let blackenedShrimpCard    = OnboardCard(title: "Blackened Shrimp",
                                                   image: "blackened-shrimp",
-                                                  text: "Spray some lemon and ask for our special sauce!")
+                                                  text: "Spray some lemon and ask\n for our special sauce!")
     
     static let buffaloBitesCard       = OnboardCard(title: "Buffalo Bites",
                                                   image: "buffalo-chicken-bites",

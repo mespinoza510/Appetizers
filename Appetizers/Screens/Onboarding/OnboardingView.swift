@@ -1,17 +1,20 @@
 import SwiftUI
 
 struct DisplayOnboardingView: View {
-    @State var hasCompletedSwipe = false
+    @StateObject var viewModel = OnboardingViewModel()
     
     var body: some View {
         ZStack {
-            if hasCompletedSwipe || UserDefaults.standard.welcomeScreenShown {
+            if viewModel.hasCompletedSwipe || viewModel.onboardingBeenViewed {
                 AppetizerListView()
             } else {
                 OnboardingView()
             }
         }.onReceive(NotificationCenter.default.publisher(for: Notification.Name("Success")), perform: { _ in
-            withAnimation { self.hasCompletedSwipe = true }
+            withAnimation {
+                self.viewModel.hasCompletedSwipe = true
+                self.viewModel.onboardingBeenViewed = true
+            }
         })
     }
 }
@@ -81,15 +84,12 @@ struct OnboardingView: View {
                 .padding(.bottom)
             }
         }
-        .onAppear(perform:  {
-            UserDefaults.standard.welcomeScreenShown = true
-        })
     }
 }
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
     }
 }

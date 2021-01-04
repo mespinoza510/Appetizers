@@ -2,7 +2,8 @@ import SwiftUI
 
 final class OnboardingViewModel: ObservableObject {
     
-    @AppStorage("hasShownWelcomeScreen") var hasShownWelcomeScreen: Bool = false
+    @AppStorage("onboardingBeenViewed") var onboardingBeenViewed = false
+    @Published var hasCompletedSwipe = false
     @Published var maxWidth = UIScreen.main.bounds.size.width - 100
     @Published var sliderOffset: CGFloat = 0
     @Published var animateText = false
@@ -24,7 +25,7 @@ final class OnboardingViewModel: ObservableObject {
     
     func onEnd(value: DragGesture.Value) {
         withAnimation(Animation.easeOut(duration: 0.3)) {
-            if sliderOffset > maxWidth / 2 {
+            if sliderOffset > maxWidth / 3 {
                 sliderOffset = maxWidth - sliderRadius
                 
                 // Notify user + delay for animation
