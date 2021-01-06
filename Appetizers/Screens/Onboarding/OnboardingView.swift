@@ -1,12 +1,13 @@
 import SwiftUI
 
 struct DisplayOnboardingView: View {
+    
     @StateObject var viewModel = OnboardingViewModel()
     
     var body: some View {
         ZStack {
             if viewModel.hasCompletedSwipe || viewModel.onboardingBeenViewed {
-                AppetizerListView()
+                AppetizerTabView()
             } else {
                 OnboardingView()
             }
@@ -44,7 +45,6 @@ struct OnboardingView: View {
                 }
                 PageControl(page: self.$viewModel.page)
                     .padding(.vertical)
-                    
                 
                 Spacer()
                 
